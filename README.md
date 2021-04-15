@@ -1,6 +1,17 @@
 # ゆめみフロントエンド採用試験（公開用）
 
 この試験に合格して、君も**有給取り放題**や！
+
+## 開発サーバ起動方法
+
+```
+yarn install
+```
+
+```
+yarn dev
+```
+
 ## 第1問 useCallback
 [**このコミット**](https://github.com/yumemi-tokumoto/frontend-test/commit/e3afde81bef0e48aa1cbc4c18da29c468977cad9)はどのような目的で行われたものでしょうか？
 
