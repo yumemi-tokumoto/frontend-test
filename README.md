@@ -16,7 +16,7 @@ yarn dev
 [**このコミット**](https://github.com/yumemi-tokumoto/frontend-test/commit/9e557f273b5b91fe5c3d0319d3b1aa65587e55b5)はどのような目的で行われたものでしょうか？
 
 ## 問題ID `0002`: Redux Action
-[**このコミット**](https://github.com/yumemi-tokumoto/frontend-test/commit/1e0d48ecb1b8db2e4d735dafb6fbd0c8406b2a20)はどのような目的で行われたものでしょうか？
+[**このコミット**](https://github.com/yumemi-tokumoto/frontend-test/commit/037aa55eac4eaaefb787a424bbe0962b8644e6c5)によって何が改善されたでしょうか？
 
 <!--
 ## 問題ID `0003`: このコメントアウトを外して問題のタイトルを記入してください。
