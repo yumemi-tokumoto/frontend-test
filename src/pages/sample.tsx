@@ -1,12 +1,11 @@
 import React, { useState, useCallback } from 'react'
 import { NextPage } from 'next'
-import { PageProps } from 'src/types'
 import {
   TextField,
   Props as TextFieldProps,
 } from 'src/components/input/TextField'
 
-const HomePage: NextPage<PageProps> = () => {
+const HomePage: NextPage = () => {
   const [familyName, setFamilyName] = useState('')
   const [givenName, setGivenName] = useState('')
 
@@ -25,16 +24,19 @@ const HomePage: NextPage<PageProps> = () => {
       <label>
         <span>姓</span>
         <TextField
+          name="familyName"
           value={familyName}
           onChange={onChangeFamilyName}
         />
+      </label>
+      <label>
         <span>名</span>
         <TextField
+          name="givenName"
           value={givenName}
           onChange={onChangeGivenName}
         />
       </label>
-      
     </>
   )
 }
