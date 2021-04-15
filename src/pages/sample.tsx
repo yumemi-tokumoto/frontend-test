@@ -14,12 +14,12 @@ const HomePage: NextPage<PageProps> = () => {
         <span>姓</span>
         <TextField
           value={familyName}
-          onInput={(ev) => setFamilyName(ev.target.value)}
+          onChange={(ev) => setFamilyName(ev.target.value)}
         />
         <span>名</span>
         <TextField
           value={givenName}
-          onInput={(ev) => setGivenName(ev.target.value)}
+          onChange={(ev) => setGivenName(ev.target.value)}
         />
       </label>
       
