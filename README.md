@@ -4,7 +4,7 @@
 
 ## 開発サーバ起動方法
 
-```
+```Shell
 # 手順1
 yarn install
 
