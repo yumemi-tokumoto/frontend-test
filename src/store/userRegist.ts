@@ -16,7 +16,7 @@ type UserInputFieldAction =
       payload: string
     }
   | {
-      type: 'userRegist/updateNumber'
+      type: 'userRegist/updateAge'
       payload: number
     }
 
@@ -33,7 +33,7 @@ export const userInputFieldReducer: Reducer<
         ...state,
         name: action.payload,
       }
-    case 'userRegist/updateNumber':
+    case 'userRegist/updateAge':
       return {
         ...state,
         age: action.payload,
