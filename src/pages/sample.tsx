@@ -1,22 +1,10 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import { NextPage } from 'next'
-import {
-  TextField,
-  Props as TextFieldProps,
-} from 'src/components/input/TextField'
+import { TextField } from 'src/components/input/TextField'
 
 const HomePage: NextPage = () => {
   const [familyName, setFamilyName] = useState('')
   const [givenName, setGivenName] = useState('')
-
-  const onChangeFamilyName: TextFieldProps['onChange'] = useCallback(
-    (ev) => setFamilyName(ev.target.value),
-    [],
-  )
-  const onChangeGivenName: TextFieldProps['onChange'] = useCallback(
-    (ev) => setGivenName(ev.target.value),
-    [],
-  )
 
   return (
     <>
@@ -26,7 +14,7 @@ const HomePage: NextPage = () => {
         <TextField
           name="familyName"
           value={familyName}
-          onChange={onChangeFamilyName}
+          onChange={(ev) => setFamilyName(ev.target.value)}
         />
       </label>
       <label>
@@ -34,7 +22,7 @@ const HomePage: NextPage = () => {
         <TextField
           name="givenName"
           value={givenName}
-          onChange={onChangeGivenName}
+          onChange={(ev) => setGivenName(ev.target.value)}
         />
       </label>
     </>

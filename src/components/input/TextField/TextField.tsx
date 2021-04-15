@@ -4,7 +4,6 @@ import React from 'react'
 export type Props = JSX.IntrinsicElements['input']
 
 export const TextField: React.FC<Props> = React.memo((props) => {
-  console.log('TextFieldレンダー')
   return <input {...props} />
 })
 
