@@ -10,14 +10,15 @@ const initialState: UserInputFieldState = {
   age: null,
 }
 
-type UserInputFieldActionType =
-  | 'userRegist/updateName'
-  | 'userRegist/updateNumber'
-
-type UserInputFieldAction = {
-  type: UserInputFieldActionType
-  payload: UserInputFieldState
-}
+type UserInputFieldAction =
+  | {
+      type: 'userRegist/updateName'
+      payload: string
+    }
+  | {
+      type: 'userRegist/updateNumber'
+      payload: number
+    }
 
 export const userInputFieldReducer: Reducer<
   UserInputFieldState,
@@ -30,12 +31,12 @@ export const userInputFieldReducer: Reducer<
     case 'userRegist/updateName':
       return {
         ...state,
-        name: action.payload.name,
+        name: action.payload,
       }
     case 'userRegist/updateNumber':
       return {
         ...state,
-        age: action.payload.age,
+        age: action.payload,
       }
     default:
       return state
